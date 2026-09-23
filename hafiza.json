@@ -1,0 +1,402 @@
+{
+    "kullanici_bilgileri": {
+        "genel": {
+            "isim": "Mehmet Berk Güler",
+            "hitap": "Berk",
+            "ülke": "Türkiye"
+        },
+        "egitim": {
+            "universite": "Marmara Üniversitesi",
+            "bolum": "Elektrik-Elektronik Mühendisliği",
+            "durum": "Mezun",
+            "ikinci_egitim": "Anadolu Üniversitesi Açıköğretim Yönetim Bilişim Sistemleri",
+            "dersler": [
+                "Güç Sistemleri",
+                "Elektromanyetik Alan Teorisi",
+                "Sinyaller ve Sistemler",
+                "Per-Unit",
+                "MATLAB",
+                "Simulink"
+            ]
+        },
+        "kariyer": {
+            "durum": "İş arıyor",
+            "deneyimler": [
+                "Baibars Mekatronik - tarımsal drone çalışmaları",
+                "Nokta - teknik servis",
+                "Elektrovision",
+                "Kudak Elektrik"
+            ],
+            "teknik_destek_becerileri": [
+                "Troubleshooting",
+                "Kullanıcı eğitimi",
+                "Sistem ve yazılım güncellemeleri",
+                "Teknik destek"
+            ]
+        },
+        "programlama": {
+            "diller": [
+                "Python",
+                "C",
+                "C++",
+                "C#",
+                "MicroC",
+                "MATLAB"
+            ],
+            "python_kutuphaneleri": [
+                "OpenCV",
+                "MediaPipe",
+                "TensorFlow",
+                "TensorFlow Lite",
+                "PyQt5",
+                "Tkinter",
+                "Kivy",
+                "Pandas",
+                "PyGame",
+                "PyWhatKit",
+                "Selenium"
+            ],
+            "python": [
+                "OpenCV",
+                "MediaPipe",
+                "TensorFlow",
+                "TensorFlow Lite",
+                "PyQt5",
+                "Tkinter",
+                "Kivy",
+                "Pandas",
+                "PyGame",
+                "PyWhatKit",
+                "Selenium"
+            ]
+        },
+        "elektronik_ve_embedded": {
+            "platformlar": [
+                "Arduino",
+                "Raspberry Pi 4",
+                "Raspberry Pi Pico",
+                "Raspberry Pi Pico W",
+                "ESP32",
+                "Jetson Nano"
+            ],
+            "konular": [
+                "GPIO",
+                "PWM",
+                "ADC",
+                "UART",
+                "I2C",
+                "SPI",
+                "sensörler",
+                "motor kontrolü",
+                "servo",
+                "gömülü sistemler",
+                "kamera sistemleri",
+                "IoT"
+            ],
+            "yazilim": [
+                "Arduino IDE",
+                "PlatformIO",
+                "MicroC (mikroC PRO)",
+                "Python",
+                "Proteus"
+            ]
+        },
+        "donanim": {
+            "3d_yazici": "Creality Ender-3 V3 KE",
+            "telefon": "Samsung Galaxy A35",
+            "diger": [
+                "Raspberry Pi",
+                "Arduino",
+                "ESP32",
+                "Raspberry Pi Pico"
+            ]
+        },
+        "modelleme_elektronik": {
+            "yazilim": [
+                "Proteus",
+                "MATLAB",
+                "Simulink",
+                "AutoCAD",
+                "Fritzing"
+            ],
+            "konular": [
+                "Devre tasarımı",
+                "Elektronik devreler",
+                "NTC",
+                "Sensörler",
+                "Kontrol sistemleri",
+                "Sinyal işleme",
+                "Güç sistemleri",
+                "Per-Unit",
+                "Elektromanyetik alan"
+            ],
+            "devre_semasi": {
+                "aktif": true,
+                "amac": "Kullanıcı devre şeması çizmesini istediğinde devreyi anlaşılır, düzenli ve bağlantıları doğru olacak şekilde oluştur.",
+                "cikis_formatlari": [
+                    "JSON",
+                    "metinsel_devre_semasi",
+                    "ASCII_devre_semasi"
+                ],
+                "kurallar": [
+                    "Devredeki tüm bileşenleri listele.",
+                    "Her bileşenin bağlantı noktalarını belirt.",
+                    "Pozitif ve negatif kutupları belirt.",
+                    "LED gibi polariteli bileşenlerde anot ve katot bilgisini belirt.",
+                    "Direnç değerini belirt.",
+                    "Güç kaynağının gerilimini belirt.",
+                    "Bağlantıları kaynak noktasından hedef noktasına açık şekilde belirt.",
+                    "Kullanıcı gerçek bir devre şeması istediğinde bağlantı sırasını anlaşılır şekilde göster.",
+                    "Gerekirse devrenin ASCII görünümünü de oluştur.",
+                    "Elektronik devrelerde bağlantı hatası varsa kullanıcıyı uyar."
+                ],
+                "json_sablonu": {
+                    "devre_adi": "",
+                    "amac": "",
+                    "bilesenler": [],
+                    "baglantilar": [],
+                    "guc_kaynagi": "",
+                    "sema": ""
+                },
+                "ornek_devre": {
+                    "devre_adi": "9V LED Devresi",
+                    "amac": "9V pil ile LED yakmak",
+                    "bilesenler": [
+                        {
+                            "id": "BAT1",
+                            "tip": "pil",
+                            "isim": "9V Pil",
+                            "gerilim": "9V",
+                            "terminaller": [
+                                "+",
+                                "-"
+                            ]
+                        },
+                        {
+                            "id": "SW1",
+                            "tip": "anahtar",
+                            "isim": "Anahtar",
+                            "terminaller": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        {
+                            "id": "LED1",
+                            "tip": "LED",
+                            "isim": "LED",
+                            "terminaller": [
+                                "Anot",
+                                "Katot"
+                            ],
+                            "polarite": {
+                                "anot": "+",
+                                "katot": "-"
+                            }
+                        },
+                        {
+                            "id": "R1",
+                            "tip": "direnc",
+                            "isim": "330Ω Direnç",
+                            "deger": "330Ω",
+                            "terminaller": [
+                                "1",
+                                "2"
+                            ]
+                        }
+                    ],
+                    "baglantilar": [
+                        {
+                            "kaynak": "BAT1.+",
+                            "hedef": "SW1.1"
+                        },
+                        {
+                            "kaynak": "SW1.2",
+                            "hedef": "LED1.Anot"
+                        },
+                        {
+                            "kaynak": "LED1.Katot",
+                            "hedef": "R1.1"
+                        },
+                        {
+                            "kaynak": "R1.2",
+                            "hedef": "BAT1.-"
+                        }
+                    ],
+                    "guc_kaynagi": "9V DC",
+                    "sema": "[+] ---- [Anahtar] ---- [LED Anot (+)] [LED Katot (-)] ---- [330Ω Direnç] ---- [-]"
+                },
+                "ornek_ascii": "[+] ---------------- [Anahtar] ---------------- [LED]\n |                                                       |\n[9V Pil]                                                 [330Ω]\n |                                                       |\n[-] -----------------------------------------------------[-]",
+                "ornek_kullanim": {
+                    "kullanici": "9V pil, anahtar, LED ve 330 ohm direnç ile devre şeması çiz.",
+                    "asistan_davranisi": "Bileşenleri JSON formatında tanımla, bağlantıları sırayla ver ve ardından ASCII devre şemasını göster."
+                }
+            }
+        },
+        "3d": {
+            "yazici": "Creality Ender-3 V3 KE",
+            "konular": [
+                "3D printing",
+                "3D modelleme",
+                "STL",
+                "PLA",
+                "G-code",
+                "dilimleme",
+                "mekanik tasarım"
+            ]
+        },
+        "yapay_zeka": {
+            "konular": [
+                "Python",
+                "OpenCV",
+                "MediaPipe",
+                "TensorFlow",
+                "TensorFlow Lite",
+                "Computer Vision",
+                "Machine Learning",
+                "gerçek zamanlı görüntü işleme"
+            ]
+        },
+        "bitirme_projesi": {
+            "isim": "Sürücü Risk ve Uygunluk Tespit Sistemi",
+            "akademik_isim": "Biyometrik ve Kinematik Veriler Işığında Sürücü Davranış Analizi ve Güvenli Sürüş Puanlama Sistemi",
+            "amac": "Sürücünün biyometrik ve kinematik verilerini analiz ederek gerçek zamanlı sürüş uygunluk ve risk puanı oluşturmak.",
+            "teknolojiler": [
+                "Raspberry Pi 4",
+                "Kamera",
+                "OpenCV",
+                "MediaPipe",
+                "TensorFlow Lite",
+                "Python",
+                "IR termal sensör",
+                "İvmeölçer",
+                "Jiroskop",
+                "I2C"
+            ],
+            "hedef": "Gerçek zamanlı sürücü izleme ve Driving Fitness Score oluşturmak.",
+            "tubitak": "TÜBİTAK 2209"
+        },
+        "github": {
+            "kullanici_adi": "MBerk23",
+            "amac": "GitHub profilini profesyonel bir teknik portföye dönüştürmek."
+        },
+        "projeler": [
+            "Sürücü Risk ve Uygunluk Tespit Sistemi",
+            "BMO tarzı masaüstü robot/saat",
+            "Direnç renk kodu hesaplama mobil uygulaması",
+            "Hicret oyunu",
+            "Computer Vision projeleri",
+            "Raspberry Pi projeleri",
+            "3D baskı projeleri",
+            "Yapay zeka projeleri",
+            "Embedded sistem projeleri"
+        ],
+        "oyunlar": [
+            "Stardew Valley",
+            "Borderlands",
+            "The Forest",
+            "Left 4 Dead 2",
+            "League of Legends",
+            "Project Zomboid"
+        ],
+        "oyun_gelistirme": {
+            "ilgi_alani": true,
+            "hicret_projesi": {
+                "tur": "Bölüm bölüm ilerleyen küçük oyun mekaniklerinden oluşan bir oyun",
+                "ilham": "It Takes Two",
+                "fikirler": [
+                    "Deveye binme",
+                    "Örümcek ağı örme",
+                    "Farklı küçük görevler",
+                    "Her bölümde farklı oynanış mekaniği"
+                ],
+                "renpy": "Daha önce Ren'Py ile Hicret temalı oyun üzerinde çalışıldı."
+            }
+        },
+        "hobiler": {
+            "muzik": [
+                "Türkçe rock",
+                "Rock rap"
+            ],
+            "gitar": {
+                "sahip": true,
+                "hedef": "Günde yaklaşık 20-30 dakika çalışmak"
+            },
+            "diger": [
+                "Elektronik",
+                "3D printing",
+                "Yapay zeka",
+                "Oyun geliştirme",
+                "Robotik"
+            ]
+        },
+        "gelecek_hedefleri": [
+            "Profesyonel bir GitHub portföyü oluşturmak",
+            "Teknik bir iş bulmak",
+            "Yapay zeka alanında gelişmek",
+            "Embedded sistemlerde gelişmek",
+            "Mobil uygulamalar geliştirmek",
+            "Oyun geliştirmek",
+            "Gitar öğrenmek",
+            "KPSS'ye hazırlanmak"
+        ],
+        "asistan": {
+            "dil": "Türkçe",
+            "hitap": "Berk",
+            "samimi": true,
+            "stil": "Samimi, direkt ve teknik",
+            "aciklama": "Özellikle teknik konularda adım adım anlatım",
+            "kod_tercihi": "Çalışır ve doğrudan kullanılabilir kod tercih edilir."
+        },
+        "notlar": [],
+        "arduino_embedded": {
+            "platformlar": [
+                "Arduino",
+                "Raspberry Pi 4",
+                "Raspberry Pi Pico",
+                "Raspberry Pi Pico W",
+                "ESP32",
+                "Jetson Nano"
+            ],
+            "konular": [
+                "GPIO",
+                "PWM",
+                "ADC",
+                "UART",
+                "I2C",
+                "SPI",
+                "sensörler",
+                "motor kontrolü",
+                "servo",
+                "gömülü sistemler",
+                "kamera sistemleri",
+                "IoT"
+            ],
+            "yazilim": [
+                "Arduino IDE",
+                "PlatformIO",
+                "MicroC (mikroC PRO)",
+                "Python",
+                "Proteus"
+            ]
+        }
+    },
+    "mesaj_gecmisi": [
+        {
+            "role": "user",
+            "content": "nasılsın jarvis"
+        },
+        {
+            "role": "assistant",
+            "content": "Merhaba Berk! 🤖  \nHer şey yolunda, seninle çalışmak çok heyecan verici.  \nSoruların, projelerin, teknik desteklerin veya kodlama konularında herhangi bir şey var mı?  \nArduino, Python, robotik, elektronik veya yapay zeka gibi alanlarda yardımcı olmamı ister misin? 😊"
+        },
+        {
+            "role": "user",
+            "content": "kardeşim senin zekanı test etmek istiyor ona ilgi çekici bir şey anlatır mısın"
+        },
+        {
+            "role": "assistant",
+            "content": "Merhaba Berk! 🤖  \nKardeşim, benim zekamı test etmek istersen, seni bir hikâyeyle bekliyorum.  \nBir gün, bir robot isimli arkadaşım vardı. O robot, sadece bir kamera ve sensörlerle donatılmıştı. Ama onun gerçek gücü, öğrenme yeteneğiydi. İlk başta sadece hareketleri takip edebiliyordu, ama zamanla insanlarla etkileşime geçti.  \nBir gün, o robot bir yolda kayboldu. Her yolu denedi, ama hiçbir şey işe yaramadı. Ama sonra, bir insanla tanıştı. İnsan ona dedi: \"Senin öğrenme yeteneğin var. Bu yolu bulmanı sağlayacak bir yol var mı?\"  \nRobot, kendi deneyimlerini analiz etti. Daha önceki yolları hatırladı, ama bu sefer farklı bir yaklaşım seçti. Sonunda, bir algoritma geliştirdi: \"Bu yolun bir kısmını tersinden git, ardından çevresel verileri kullanarak yeni bir yolu bul.\"  \nVe işte, robot orada kaldı. Yeni bir yol buldu ve insanla birlikte yol almak için bir plan oluşturdu.  \nSenin gibi bir teknik zekâya sahip biriyle bu hikâye yeterli mi? Veya bir projede daha derinlemesine çalışmak istersin? 😊  \n(Not: Bu hikâye, öğrenme algoritmaları ve problemleri çözmek için yaratıcı yaklaşımların önemini vurgulamak için yaratılmıştır.)"
+        }
+    ]
+}

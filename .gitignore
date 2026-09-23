@@ -1,0 +1,13 @@
+# Geçici ses dosyalarını engelle
+jarvis_audio/
+*.mp3
+*.wav
+
+# Önbellek ve sanal ortamlar
+__pycache__/
+*.pyc
+venv/
+.env
+
+# PDF içerikleri veya özel veriler (isteğe bağlı)
+# pdf_kitaplar/
